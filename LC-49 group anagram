@@ -1,0 +1,34 @@
+
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs) {
+
+        vector<string> keys;
+        vector<vector<string>> ans;
+
+        for(string s : strs) {
+
+            string temp = s;
+            sort(temp.begin(), temp.end());
+
+            int idx = -1;
+
+            for(int i = 0; i < keys.size(); i++) {
+                if(keys[i] == temp) {
+                    idx = i;
+                    break;
+                }
+            }
+
+            if(idx == -1) {
+                keys.push_back(temp);
+                ans.push_back({s});
+            }
+            else {
+                ans[idx].push_back(s);
+            }
+        }
+
+        return ans;
+    }
+};
