@@ -26,14 +26,31 @@ void explainVector() {
 int main(){
     // explainVector();
     vector<int> v = {10, 20, 30, 40, 50};
+//     for(int i = 0; i < v.size(); i++){
+//     cout << v[i] << " ";
+// }
 
     // vector<int>::iterator it = v.begin();
     // vector<int>::iterator it = v.end();
     // vector<int>::iterator it = v.rend();
 
     // cout << *(it);
-    cout<< v[0]<<" "<<v.at(0);
-    cout << v.back<<" ";
-
+    // cout<< v[0]<<" "<<v.at(0);
+    // cout << v.back<<" ";
+    // for(vector <int>::iterator it = v.begin();it!= v.end();it++){
+    //     cout <<*(it)<<" ";
+    // }
+    // cout << endl;
+    // for(auto it =v.begin(); it != v.end(); it++){
+    //     cout <<*(it)<<" ";
+    // }
+    //{10,12,45,67,32}
+    // v.erase(v.begin()+1); //{10,45,67,32}
+    // v.erase(v.begin()+2 , v.begin()+4); //{10,12,67}
+    //insert  function
+    // vector<int> v(2,100);
+    //    for(vector <int>::iterator it = v.begin();it!= v.end();it++){
+    //     cout <<*(it)<<" ";
+    // }
     return 0;
 }
